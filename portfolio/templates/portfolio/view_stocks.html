@@ -1,0 +1,23 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+
+    {% for stock in stocks %}
+        <div class="back">
+            <div class="text-info p-4 border">Ticker {{ stock.stock_ticker }}</div>
+            <div class="p-4 border">Date {{ stock.stockCreated }}</div>
+            <div class="p-4 border">Open {{ stock.daily_open }}</div>
+            <div class="p-4 border">high {{ stock.daily_high }}</div>
+            <div class="p-4 border">low {{ stock.daily_low }}</div>
+            <div class="p-4 border">Close {{ stock.daily_close }}</div>
+            <div class="p-4 border">Volume {{ stock.stock_volume }}</div>
+            <div class="p-4 border">Adj Close {{ stock.daily_adj_close }}</div>
+        </br>
+
+
+      </div>
+    {% endfor %}
+
+    <a class="btn btn-outline-danger" href="{% url 'portfolio-stock-options' %}">Return</a>
+
+{% endblock content %}

@@ -1,0 +1,32 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="p-2 menu-box">
+            <h2>Checkout My portfolio</h2>
+            <a href="{% url 'portfolio-portfolio' %}"><img src="{% static 'portfolio.jpg' %}"></a>
+        </div>
+
+        <div class="p-2 menu-box">
+            <h2>News Feed</h2>
+            <a href="{% url 'blog-news-board' %}"><img src="{% static 'news-feed.jpg' %}"></a>
+        </div>
+
+        <div class="p-2 menu-box">
+            <h2>View My Transactions</h2>
+            <a href="{% url 'portfolio-transaction-page' %}"><img src="{% static 'transactions.png' %}"></a>
+        </div>
+
+        <div class="p-2 menu-box">
+            <h2>Advanced Analysis</h2>
+            <a href="{% url 'portfolio-advanced-analysis' %}"><img src="{% static 'advanced.jpg' %}"></a>
+        </div>
+
+    </div>
+{% endblock content %}

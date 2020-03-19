@@ -1,0 +1,32 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+        <div class="d-flex text-black border">
+          <div class="p-2 border back">Stock Ticker</div>
+          <div class="p-2 border back">Purchase Price</div>
+          <div class="p-2 border back">Number of Shares</div>
+          <div class="p-2 border back">User</div>
+          <div class="p-2 border back">Date Purchased</div>
+      </div>
+
+ {% for stock in stocks %}
+        <div class="d-flex text-black border">
+          <div class="p-2 border back">{{ stock.stock_ticker }}</div>
+          <div class="p-2 border back">{{ stock.purchase_price }}</div>
+          <div class="p-2 border back">{{ stock.number_of_shares }}</div>
+          <div class="p-2 border back">{{ stock.user }}</div>
+          <div class="p-2 border back">{{ stock.stockCreated }}</div>
+
+      </div>
+    {% endfor %}
+
+    <a class="btn btn-outline-danger" href="{% url 'blog-home' %}">Return</a>
+
+{% endblock content %}

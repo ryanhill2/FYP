@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+    </br>
+    {% for stock in stocks %}
+
+        <a class="btn btn-outline-primary" href="{% url 'portfolio-stock-options' %}">{{ stock.portfolio_name}}</a>
+
+    {% endfor %}
+
+    </br>
+    </br>
+
+    <a class="btn btn-outline-danger" href="{% url 'portfolio-portfolio' %}">Return</a>
+
+{% endblock content %}

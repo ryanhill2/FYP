@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+    {% for stock in stocks %}
+        <div class="back">
+            <div class="text-info p-4 border">Ticker {{ stock.stock_ticker }}</div>
+            <div class="p-4 border">Purchase price{{ stock.purchase_price }}</div>
+            <div class="p-4 border">Current price {{ stock.current_price }}</div>
+        </br>
+
+        <div>
+            <h1>Total Portfolio Change {{ portfolio.total_change}}</h1>
+        </div>
+
+
+
+      </div>
+    {% endfor %}
+
+    <a class="btn btn-outline-danger" href="{% url 'portfolio-advanced-analysis' %}">Return</a>
+
+{% endblock content %}

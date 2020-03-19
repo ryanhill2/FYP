@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<h1>Add Stock</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <a class="btn btn-outline-danger" href="{% url 'portfolio-stock-options' %}">Return</a>
+        <button class="btn-outline-primary" type="submit">Add</button>
+    </form>
+
+<!--trans history optional feature-->
+
+{% endblock content %}

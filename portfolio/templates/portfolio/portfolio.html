@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="p-2 menu-box">
+            <h2>Create portfolio</h2>
+            <a href="{% url 'portfolio-create-portfolio' %}"><img src="{% static 'create-portfolio.jpg' %}"></a>
+        </div>
+
+        <div class="p-2 menu-box">
+            <h2>View Portfolio</h2>
+            <a href="{% url 'portfolio-view-portfolio' %}"><img src="{% static 'view-portfolio.jpeg' %}"></a>
+        </div>
+
+    </div>
+
+    <a class="btn btn-outline-danger" href="{% url 'blog-home' %}">Return</a>
+
+{% endblock content %}

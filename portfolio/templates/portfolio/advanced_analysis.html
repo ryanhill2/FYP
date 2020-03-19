@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<h1>Advanced Analysis</h1>
+    <div class="row">
+        <div class="p-2 menu-box">
+            <h2>Compare Stocks</h2>
+            <a href="{% url 'portfolio-compare-stock' %}"><img src="{% static 'compair-stocks.jpg' %}"></a>
+        </div>
+
+        <div class="p-2 menu-box">
+            <h2>View Individual Stock data</h2>
+            <a href="{% url 'portfolio-view_individual_stock_data' %}"><img src="{% static 'individual-stock-data.jpg' %}"></a>
+        </div>
+
+    </div>
+
+        <a class="btn btn-outline-danger" href="{% url 'blog-home' %}">Return</a>
+
+{% endblock content %}
+
