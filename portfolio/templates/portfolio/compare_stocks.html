@@ -1,6 +1,11 @@
 {% extends "blog/base.html" %}
 {% block content %}
 
+    <form method="get">
+        {{ form.as_p}}
+        <button class="btn-outline-primary" type="submit">Compare Stock</button>
+    </form>
+
     {% for stock in stocks %}
         <div class="back">
             <div class="text-info p-4 border">Ticker {{ stock.stock_ticker }}</div>
@@ -13,9 +18,9 @@
         </div>
 
 
-
       </div>
     {% endfor %}
+
 
     <a class="btn btn-outline-danger" href="{% url 'portfolio-advanced-analysis' %}">Return</a>
 

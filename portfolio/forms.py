@@ -18,3 +18,8 @@ class portfolioForm(forms.ModelForm):
     class Meta:
         model = Portfolio
         fields = ('portfolio_name',)
+
+class AdvancedAnalysisForm(forms.Form):
+
+    stock_name = forms.CharField(label='Stock name', max_length=100)
+

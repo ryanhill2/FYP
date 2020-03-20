@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from django.views.generic import TemplateView
-from .forms import stockForm, portfolioForm
+from django.views.generic import TemplateView, View
+from .forms import stockForm, portfolioForm, AdvancedAnalysisForm
 from .models import Stock, Portfolio
 
 
@@ -24,12 +24,28 @@ def viewstock(request):
     }
     return render(request, 'portfolio/view_stocks.html', stocks_list)
 
+
+class compareStock(View):
+    form = AdvancedAnalysisForm
+
+    def get(self, request, *args, **kwargs):
+        if from.is_valid():
+            me = form.cleaned_data['stock_name']
+
+
+        return render(request, 'portfolio/compare_stocks.html', args)
+
+
 def comparestock(request):
-    stocks_list = {
+    form = AdvancedAnalysisForm()
+
+    args = {
+        'form': form,
         'stocks': Stock.objects.all(),
         'portfolio': Portfolio.objects.all()[0]
     }
-    return render(request, 'portfolio/compare_stocks.html', stocks_list)
+
+    return render(request, 'portfolio/compare_stocks.html', args)
 
 def stock_options(request):
     stock_list = {
@@ -51,9 +67,6 @@ def create_portfolio(request):
     return render(request, 'portfolio/create_portfolio.html')
 
 def advanced_analysis(request):
-    # stock_list = {
-    #     'stocks': Portfolio.objects.all()
-    # }
     return render(request, 'portfolio/advanced_analysis.html')
 
 
@@ -126,3 +139,4 @@ class addportfolio(TemplateView):
             return redirect('portfolio-create-portfolio')
             args = {'form': form, 'text': text}
         return render(request, self.template_name, args)
+
