@@ -9,6 +9,7 @@ class Stock(models.Model):
     stock_ticker = models.TextField(max_length=5)
     purchase_price = models.TextField(max_length=100, blank=True)
     current_price = models.TextField(max_length=100, blank=True)
+    stock_change = models.TextField(max_length=100, blank=True)
     number_of_shares = models.TextField(max_length=10)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     stockCreated = models.DateTimeField(auto_now_add=True)
@@ -50,7 +51,13 @@ class Portfolio(models.Model):
 
 class Transactions(models.Model):
     portfolio = models.ForeignKey(Portfolio, on_delete=models.CASCADE)
-    transactionTime = models.DateTimeField(auto_now=True)
+    trans_stock_ticker = models.TextField(max_length=100)
+    stock_price = models.TextField(max_length=100)
+    date_logged = models.DateTimeField(auto_now=True)
+
+
+
+
 
 
 
