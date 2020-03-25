@@ -1,9 +1,14 @@
 {% extends "blog/base.html" %}
 {% block content %}
-
-
-    <h1>{{ portfolio }} details </h1>
     <h1>{{ portfolio }}</h1>
     <h1>Total {{ portfolio.total_change }}</h1>
+    <br>
+    <br>
+    <h1>Enter in a stock in your portfolio</h1>
+    <form method="get">
+            {{ form.as_p}}
+            <button class="btn-outline-primary" type="submit">Get Graph</button>
+    </form>
+
 
 {% endblock content %}

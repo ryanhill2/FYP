@@ -21,6 +21,12 @@ class portfolioForm(forms.ModelForm):
 
 class AdvancedAnalysisForm(forms.Form):
 
-    stock_name1 = forms.CharField(label='Stock name', max_length=100)
-    stock_name2 = forms.CharField(label='Stock name', max_length=100)
+    stock_names = forms.CharField(widget=forms.Textarea)
+
+class graphAnalysisForm(forms.Form):
+    stock_name = forms.CharField(label='stock_name')
+    stock_start_date = forms.CharField(label='stock_start_date')
+    stock_end_date = forms.CharField(label='stock_end_date')
+
+
 
