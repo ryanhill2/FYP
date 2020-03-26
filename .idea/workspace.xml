@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be8e8f2-af46-4fa1-bfca-035bc6262d57" name="Default Changelist" comment="update to models extra fields added">
+      <change afterPath="$PROJECT_DIR$/portfolio/test_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/view_individual_stock_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/view_individual_stock_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/compare_stocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/compare_stocks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +79,7 @@
       <recent name="$PROJECT_DIR$/portfolio" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.finfriend">
+  <component name="RunManager" selected="Python.test_2">
     <configuration name="cron" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="finfriend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,6 +146,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="finfriend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/test_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="finfriend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,36 +214,21 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for portfolio.unit_tests.TestSignals" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="finfriend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;portfolio.unit_tests.TestSignals&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Django server.finfriend" />
       <item itemvalue="Python.tests" />
       <item itemvalue="Python.scheduler" />
       <item itemvalue="Python.cron" />
       <item itemvalue="Python.signals" />
-      <item itemvalue="Python tests.Unittests for portfolio.unit_tests.TestSignals" />
+      <item itemvalue="Python.test_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_2" />
+        <item itemvalue="Python.tests" />
         <item itemvalue="Python.signals" />
         <item itemvalue="Python.scheduler" />
         <item itemvalue="Python.cron" />
-        <item itemvalue="Python.tests" />
-        <item itemvalue="Python tests.Unittests for portfolio.unit_tests.TestSignals" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +258,8 @@
       <workItem from="1584925438771" duration="8652000" />
       <workItem from="1584978465566" duration="6081000" />
       <workItem from="1585074061106" duration="10811000" />
-      <workItem from="1585165971538" duration="6456000" />
+      <workItem from="1585165971538" duration="14645000" />
+      <workItem from="1585198178969" duration="2818000" />
     </task>
     <task id="LOCAL-00001" summary="update to models extra fields added">
       <created>1585012360538</created>
@@ -258,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585012360538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update to forms added">
+      <created>1585174090144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585174090144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +283,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update to models extra fields added" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to models extra fields added" />
+    <MESSAGE value="update to forms added" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to forms added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582815521439">
@@ -293,30 +311,30 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1214" y="256" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1582816401009" />
-    <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1585012368658">
+    <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1585174089661">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585012368658" />
+    <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585174089661" />
     <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583940746540">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583940746540" />
-    <state width="881" height="274" key="GridCell.Tab.0.bottom" timestamp="1585174028605">
+    <state width="871" height="273" key="GridCell.Tab.0.bottom" timestamp="1585202169860">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="274" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585174028605" />
-    <state width="881" height="274" key="GridCell.Tab.0.center" timestamp="1585174028603">
+    <state width="871" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585202169860" />
+    <state width="871" height="273" key="GridCell.Tab.0.center" timestamp="1585202169859">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="274" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585174028603" />
-    <state width="881" height="274" key="GridCell.Tab.0.left" timestamp="1585174028602">
+    <state width="871" height="273" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585202169859" />
+    <state width="871" height="273" key="GridCell.Tab.0.left" timestamp="1585202169858">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="274" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585174028602" />
-    <state width="881" height="274" key="GridCell.Tab.0.right" timestamp="1585174028604">
+    <state width="871" height="273" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585202169858" />
+    <state width="871" height="273" key="GridCell.Tab.0.right" timestamp="1585202169860">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="881" height="274" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585174028604" />
+    <state width="871" height="273" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585202169860" />
     <state width="881" height="264" key="GridCell.Tab.1.bottom" timestamp="1585169208992">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -337,10 +355,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="847" y="150" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583383747542" />
-    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585165974605">
+    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585198188130">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585165974605" />
+    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585198188130" />
     <state x="1119" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585167395088">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -371,11 +389,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/finfriend$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1583419446789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/finfriend$tests.coverage" NAME="tests Coverage Results" MODIFIED="1583966142609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585195362077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$scheduler.coverage" NAME="scheduler Coverage Results" MODIFIED="1584010962493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals.coverage" NAME="Unittests for portfolio.unit_tests.TestSignals Coverage Results" MODIFIED="1583419266745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals_test_add.coverage" NAME="Unittests for portfolio.unit_tests.TestSignals.test_add Coverage Results" MODIFIED="1583413759277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$cron.coverage" NAME="cron Coverage Results" MODIFIED="1584006483524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$test_2.coverage" NAME="test_2 Coverage Results" MODIFIED="1585201565706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_in_unit_tests_py.coverage" NAME="Unittests in unit_tests.py Coverage Results" MODIFIED="1583413241014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$signals.coverage" NAME="signals Coverage Results" MODIFIED="1584011027966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
   </component>
