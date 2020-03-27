@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, View
-from .forms import stockForm, portfolioForm, AdvancedAnalysisForm
+from .forms import stockForm, \
+    portfolioForm, \
+    AdvancedAnalysisForm, \
+    graphAnalysisForm
 from .models import Stock, Portfolio
 
 
@@ -12,11 +15,13 @@ def portfolio(request):
     }
     return render(request, 'portfolio/portfolio.html')
 
+
 def viewPortfolio(request):
     stock_list = {
         'stocks': Portfolio.objects.all()
     }
     return render(request, 'portfolio/view_portfolio.html', stock_list)
+
 
 def viewstock(request):
     stocks_list = {
@@ -25,27 +30,47 @@ def viewstock(request):
     return render(request, 'portfolio/view_stocks.html', stocks_list)
 
 
-class compareStock(View):
-    form = AdvancedAnalysisForm
-
-    def get(self, request, *args, **kwargs):
-        if from.is_valid():
-            me = form.cleaned_data['stock_name']
+# class compareStock(View):
+#     form = AdvancedAnalysisForm
+#
+#     def get:(self, request, *args, **kwargs):
 
 
-        return render(request, 'portfolio/compare_stocks.html', args)
+def filterstocks(stocks):
+    functionStock = stocks['stock_names']
+    print(functionStock)
+    functionStock = functionStock.replace(" ", "',")
+    return functionStock
 
+
+#  my_stocks = stocks['stock_names'][0].split()   # this gives a list, my_stocks with two text elements, ANF and AIB
+# for stock in my_stocks:
+#     do_something(stock)    # where do_something is any function or code suite
 
 def comparestock(request):
     form = AdvancedAnalysisForm()
 
-    args = {
-        'form': form,
-        'stocks': Stock.objects.all(),
-        'portfolio': Portfolio.objects.all()[0]
-    }
+    stocks = request.GET
+    if bool(stocks):
+        print("you have stocks")
+        listofstocks = filterstocks(stocks)
+        print(listofstocks)
+        args = {
+            'form': form,
+            'stocks': Stock.objects.filter(stock_ticker__in=['AIB', 'KO']),
+            'portfolio': Portfolio.objects.all()[0]
+        }
 
-    return render(request, 'portfolio/compare_stocks.html', args)
+        return render(request, 'portfolio/compare_stocks.html', args)
+
+    else:
+        args = {
+            'form': form,
+            'portfolio': Portfolio.objects.all()[0]
+        }
+
+        return render(request, 'portfolio/compare_stocks.html', args)
+
 
 def stock_options(request):
     stock_list = {
@@ -53,11 +78,39 @@ def stock_options(request):
     }
     return render(request, 'portfolio/view_stock_options.html', stock_list)
 
+
 def view_individual_stock_data(request):
-    stock_list = {
-        'portfolio': Portfolio.objects.all().last()
-    }
-    return render(request, 'portfolio/view_individual_stock_data.html', stock_list)
+    form = graphAnalysisForm
+    stock = request.GET
+    if bool(stock):
+        print("you have stocks")
+        print(stock['stock_name'])
+        args = {
+            'form': form,
+            'stocks': Stock.objects.all(),
+            'portfolio': Portfolio.objects.all()[0]
+        }
+
+        return render(request, 'portfolio/view_individual_stock_data.html', args)
+
+    else:
+        args = {
+            'form': form,
+            'portfolio': Portfolio.objects.all().last()
+        }
+
+        return render(request, 'portfolio/view_individual_stock_data.html', args)
+
+def create_stock_graph(stock_ticker, start_date, end_date):
+    style.use('ggplot')
+
+    start = dt.datetime(2000, 1, 1)
+    end = dt.datetime(2019, 11, 7)
+    stock_name = 'ANF'
+
+    df = web.DataReader(stock_name, 'yahoo')
+    print(df.tail(6))
+
 
 
 def create_portfolio(request):
@@ -66,9 +119,9 @@ def create_portfolio(request):
     # }
     return render(request, 'portfolio/create_portfolio.html')
 
+
 def advanced_analysis(request):
     return render(request, 'portfolio/advanced_analysis.html')
-
 
 
 # class portfolio(TemplateView):
@@ -118,7 +171,6 @@ class addstock(TemplateView):
         return render(request, self.template_name, args)
 
 
-
 class addportfolio(TemplateView):
     template_name = "portfolio/create_portfolio.html"
 
@@ -139,4 +191,3 @@ class addportfolio(TemplateView):
             return redirect('portfolio-create-portfolio')
             args = {'form': form, 'text': text}
         return render(request, self.template_name, args)
-
