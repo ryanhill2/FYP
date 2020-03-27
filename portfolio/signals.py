@@ -160,8 +160,8 @@ def getListOfStocks():
 
 
     # print(listOfStocks)
-
-
+#
+#
 # style.use('ggplot')
 #
 # start = dt.datetime(2000, 1, 1)

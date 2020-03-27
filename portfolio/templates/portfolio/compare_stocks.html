@@ -1,6 +1,10 @@
 {% extends "blog/base.html" %}
 {% block content %}
 
+     <div>
+          <h1>Total Portfolio Value {{ portfolio.total_change}}</h1>
+      </div>
+
     <form method="get">
         {{ form.as_p}}
         <button class="btn-outline-primary" type="submit">Compare Stock</button>
@@ -12,11 +16,6 @@
             <div class="p-4 border">Purchase price{{ stock.purchase_price }}</div>
             <div class="p-4 border">Current price {{ stock.current_price }}</div>
         </br>
-
-        <div>
-            <h1>Total Portfolio Change {{ portfolio.total_change}}</h1>
-        </div>
-
 
       </div>
     {% endfor %}
