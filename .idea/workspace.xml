@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be8e8f2-af46-4fa1-bfca-035bc6262d57" name="Default Changelist" comment="update to models extra fields added">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supervisor-app.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traefik.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwsgi.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uwsgi_params" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/compare_stocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/compare_stocks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finfriend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/finfriend/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,6 +263,8 @@
       <workItem from="1585165971538" duration="14645000" />
       <workItem from="1585198178969" duration="3980000" />
       <workItem from="1585276241401" duration="977000" />
+      <workItem from="1585515286761" duration="384000" />
+      <workItem from="1585564553852" duration="1272000" />
     </task>
     <task id="LOCAL-00001" summary="update to models extra fields added">
       <created>1585012360538</created>
@@ -298,9 +304,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582815521439" />
-    <state x="1139" y="357" width="624" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582215382295">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="3031" y="338" width="629" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585565464329">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="3031" y="338" width="629" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585565464329" />
     <state x="1139" y="357" width="624" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582215382295" />
     <state x="1184" y="302" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583326246670">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -318,13 +325,15 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1214" y="256" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1582816401009" />
-    <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1585283027364">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2" timestamp="1585565873880">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283027364" />
-    <state x="67" y="117" width="1482" height="872" key="DiffContextDialog" timestamp="1585282945655">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585565873880" />
+    <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283060025" />
+    <state x="1920" y="92" width="1482" height="872" key="DiffContextDialog" timestamp="1585565854068">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="1920" y="92" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585565854068" />
     <state x="67" y="117" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585282945655" />
     <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583940746540">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -366,9 +375,16 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="847" y="150" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583383747542" />
-    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585276241649">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="2460" y="256" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1585565883634">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2460" y="256" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585565883634" />
+    <state x="588" y="277" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283071879" />
+    <state x="2992" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585564554450">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2992" y="363" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585564554450" />
+    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1585515294182" />
     <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585276241649" />
     <state x="1119" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585167395088">
       <screen x="67" y="27" width="1853" height="1053" />
