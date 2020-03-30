@@ -79,11 +79,23 @@ WSGI_APPLICATION = 'finfriend.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # development database
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+
+    # production database (not my real user and password but try and take my server if you want)
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'gis',
+    #     'USER': 'root123',
+    #     'PASSWORD': 'root123',
+    #     'HOST': '178.62.28.5',
+    #     'PORT': '5432',
+    # }
 }
+
 
 
 # Password validation
