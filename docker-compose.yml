@@ -1,0 +1,37 @@
+version: "3.3"
+
+services:
+  traefik:
+    image: traefik
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/docker/certs/acme.json:/acme.json
+      - ./traefik.toml:/traefik.toml
+    networks:
+      - traefik-public
+      - traefik
+
+  web:
+    image: ryanhill2/fyp
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.middlewares.fyp-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.fyp-http.entrypoints=web"
+      - "traefik.http.routers.fyp-http.rule=Host(`ryanhillconsulting.com`)"
+      - "traefik.http.routers.fyp-http.middlewares=fyp-https@docker"
+      - "traefik.http.routers.fyp.entrypoints=web-secure"
+      - "traefik.http.routers.fyp.rule=Host(`ryanhillconsulting.com`)"
+      - "traefik.http.routers.fyp.tls=true"
+      - "traefik.http.routers.fyp.tls.certresolver=default"
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
+  traefik:
+    internal: true
