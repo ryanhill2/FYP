@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be8e8f2-af46-4fa1-bfca-035bc6262d57" name="Default Changelist" comment="update to models extra fields added">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/supervisor-app.conf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/traefik.toml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uwsgi.ini" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uwsgi_params" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finfriend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/finfriend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/graph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +68,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/portfolio/templates" />
@@ -77,12 +78,9 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/finfriend" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/portfolio" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.test_2">
-    <configuration name="cron" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.graph">
+    <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="finfriend" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +93,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/cron.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -220,17 +218,17 @@
       <item itemvalue="Django server.finfriend" />
       <item itemvalue="Python.tests" />
       <item itemvalue="Python.scheduler" />
-      <item itemvalue="Python.cron" />
       <item itemvalue="Python.signals" />
       <item itemvalue="Python.test_2" />
+      <item itemvalue="Python.graph" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.graph" />
         <item itemvalue="Python.test_2" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python.signals" />
         <item itemvalue="Python.scheduler" />
-        <item itemvalue="Python.cron" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +262,9 @@
       <workItem from="1585198178969" duration="3980000" />
       <workItem from="1585276241401" duration="977000" />
       <workItem from="1585515286761" duration="384000" />
-      <workItem from="1585564553852" duration="1272000" />
+      <workItem from="1585564553852" duration="10639000" />
+      <workItem from="1585738030963" duration="615000" />
+      <workItem from="1586117278861" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="update to models extra fields added">
       <created>1585012360538</created>
@@ -287,7 +287,35 @@
       <option name="project" value="LOCAL" />
       <updated>1585202202296</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="prod database details">
+      <created>1585565874236</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585565874236</updated>
+    </task>
+    <task id="LOCAL-00005" summary="prod database details">
+      <created>1585565915288</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585565915288</updated>
+    </task>
+    <task id="LOCAL-00006" summary="getting started with working with values to create a data frame with the yahoo API">
+      <created>1585568788510</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585568788510</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Docker compose file added for deployment">
+      <created>1585589645515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585589645515</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +325,10 @@
     <MESSAGE value="update to models extra fields added" />
     <MESSAGE value="update to forms added" />
     <MESSAGE value="New tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="New tests added" />
+    <MESSAGE value="prod database details" />
+    <MESSAGE value="getting started with working with values to create a data frame with the yahoo API" />
+    <MESSAGE value="Docker compose file added for deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker compose file added for deployment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582815521439">
@@ -325,10 +356,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1214" y="256" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1582816401009" />
-    <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2" timestamp="1585565873880">
+    <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2" timestamp="1585589668400">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585565873880" />
+    <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589668400" />
     <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283060025" />
     <state x="1920" y="92" width="1482" height="872" key="DiffContextDialog" timestamp="1585565854068">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -339,53 +370,61 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583940746540" />
-    <state width="871" height="273" key="GridCell.Tab.0.bottom" timestamp="1585233870778">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.0.bottom" timestamp="1585589732782">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
     <state width="871" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870778" />
-    <state width="871" height="273" key="GridCell.Tab.0.center" timestamp="1585233870774">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.0.center" timestamp="1585589732782">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
     <state width="871" height="273" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870774" />
-    <state width="871" height="273" key="GridCell.Tab.0.left" timestamp="1585233870774">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.0.left" timestamp="1585589732782">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
     <state width="871" height="273" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870774" />
-    <state width="871" height="273" key="GridCell.Tab.0.right" timestamp="1585233870775">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.0.right" timestamp="1585589732782">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
     <state width="871" height="273" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870775" />
-    <state width="881" height="264" key="GridCell.Tab.1.bottom" timestamp="1585169208992">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.1.bottom" timestamp="1585589732783">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732783" />
     <state width="881" height="264" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585169208992" />
-    <state width="881" height="264" key="GridCell.Tab.1.center" timestamp="1585169208992">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.1.center" timestamp="1585589732783">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732783" />
     <state width="881" height="264" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585169208992" />
-    <state width="881" height="264" key="GridCell.Tab.1.left" timestamp="1585169208992">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.1.left" timestamp="1585589732783">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732783" />
     <state width="881" height="264" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585169208992" />
-    <state width="881" height="264" key="GridCell.Tab.1.right" timestamp="1585169208992">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1725" height="244" key="GridCell.Tab.1.right" timestamp="1585589732783">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1725" height="244" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732783" />
     <state width="881" height="264" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585169208992" />
     <state x="847" y="150" key="SettingsEditor" timestamp="1583383747542">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="847" y="150" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583383747542" />
-    <state x="2460" y="256" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1585565883634">
+    <state x="2460" y="256" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1585589651983">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2460" y="256" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585565883634" />
+    <state x="2460" y="256" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589651983" />
     <state x="588" y="277" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283071879" />
-    <state x="2992" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1585564554450">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586117279764">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="2992" y="363" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585564554450" />
+    <state x="2992" y="363" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586016161122" />
     <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1585515294182" />
-    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585276241649" />
+    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586117279764" />
     <state x="1119" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585167395088">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -417,6 +456,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/finfriend$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1583419446789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/finfriend$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585195362077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$graph.coverage" NAME="graph Coverage Results" MODIFIED="1585579139296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$scheduler.coverage" NAME="scheduler Coverage Results" MODIFIED="1584010962493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals.coverage" NAME="Unittests for portfolio.unit_tests.TestSignals Coverage Results" MODIFIED="1583419266745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals_test_add.coverage" NAME="Unittests for portfolio.unit_tests.TestSignals.test_add Coverage Results" MODIFIED="1583413759277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
