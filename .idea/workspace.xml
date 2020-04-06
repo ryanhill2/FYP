@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be8e8f2-af46-4fa1-bfca-035bc6262d57" name="Default Changelist" comment="update to models extra fields added">
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supervisor-app.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traefik.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi_params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/signal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/test_signal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/calc.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/test_calc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/unit_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/test_signals.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +80,8 @@
       <recent name="$PROJECT_DIR$/finfriend" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.graph">
-    <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test_signal">
+    <configuration name="test_signal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="finfriend" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,95 +94,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/graph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scheduler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="finfriend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/scheduler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="signals" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="finfriend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/signals.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="finfriend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/test_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="finfriend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/test_signal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,21 +127,81 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for portfolio.test_signals.TestSignals.test_add" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="finfriend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;portfolio.test_signals.TestSignals.test_add&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_signal.TestCalc" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="finfriend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_signal.TestCalc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_signal.TestCalc.test_add" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="finfriend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_signal.TestCalc.test_add&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_signal.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="finfriend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/portfolio/test_signal.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Django server.finfriend" />
-      <item itemvalue="Python.tests" />
-      <item itemvalue="Python.scheduler" />
-      <item itemvalue="Python.signals" />
-      <item itemvalue="Python.test_2" />
-      <item itemvalue="Python.graph" />
+      <item itemvalue="Python tests.Unittests for portfolio.test_signals.TestSignals.test_add" />
+      <item itemvalue="Python tests.Unittests in test_signal.py" />
+      <item itemvalue="Python tests.Unittests for test_signal.TestCalc.test_add" />
+      <item itemvalue="Python tests.Unittests for test_signal.TestCalc" />
+      <item itemvalue="Python.test_signal" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.graph" />
-        <item itemvalue="Python.test_2" />
-        <item itemvalue="Python.tests" />
-        <item itemvalue="Python.signals" />
-        <item itemvalue="Python.scheduler" />
+        <item itemvalue="Python.test_signal" />
+        <item itemvalue="Python tests.Unittests for test_signal.TestCalc" />
+        <item itemvalue="Python tests.Unittests for test_signal.TestCalc.test_add" />
+        <item itemvalue="Python tests.Unittests in test_signal.py" />
+        <item itemvalue="Python tests.Unittests for portfolio.test_signals.TestSignals.test_add" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +237,10 @@
       <workItem from="1585515286761" duration="384000" />
       <workItem from="1585564553852" duration="10639000" />
       <workItem from="1585738030963" duration="615000" />
-      <workItem from="1586117278861" duration="603000" />
+      <workItem from="1586117278861" duration="642000" />
+      <workItem from="1586151575080" duration="813000" />
+      <workItem from="1586152836730" duration="2444000" />
+      <workItem from="1586200984611" duration="6660000" />
     </task>
     <task id="LOCAL-00001" summary="update to models extra fields added">
       <created>1585012360538</created>
@@ -315,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585589645515</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="files for deployment">
+      <created>1586118062310</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586118062310</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +311,8 @@
     <MESSAGE value="prod database details" />
     <MESSAGE value="getting started with working with values to create a data frame with the yahoo API" />
     <MESSAGE value="Docker compose file added for deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker compose file added for deployment" />
+    <MESSAGE value="files for deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="files for deployment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582815521439">
@@ -356,11 +340,12 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1214" y="256" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1582816401009" />
-    <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2" timestamp="1585589668400">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="230" y="103" width="860" height="807" key="CommitChangelistDialog2" timestamp="1586118061790">
+      <screen x="67" y="27" width="3773" height="1053" />
     </state>
     <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589668400" />
     <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283060025" />
+    <state x="230" y="103" key="CommitChangelistDialog2/67.27.3773.1053@67.27.3773.1053" timestamp="1586118061790" />
     <state x="1920" y="92" width="1482" height="872" key="DiffContextDialog" timestamp="1585565854068">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -370,25 +355,29 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583940746540" />
-    <state width="1725" height="244" key="GridCell.Tab.0.bottom" timestamp="1585589732782">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1807" height="273" key="GridCell.Tab.0.bottom" timestamp="1586206870085">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1725" height="244" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
+    <state width="1725" height="253" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724903" />
+    <state width="1807" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870085" />
     <state width="871" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870778" />
-    <state width="1725" height="244" key="GridCell.Tab.0.center" timestamp="1585589732782">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1807" height="273" key="GridCell.Tab.0.center" timestamp="1586206870085">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1725" height="244" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
+    <state width="1725" height="253" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724902" />
+    <state width="1807" height="273" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870085" />
     <state width="871" height="273" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870774" />
-    <state width="1725" height="244" key="GridCell.Tab.0.left" timestamp="1585589732782">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1807" height="273" key="GridCell.Tab.0.left" timestamp="1586206870084">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1725" height="244" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
+    <state width="1725" height="253" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724902" />
+    <state width="1807" height="273" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870084" />
     <state width="871" height="273" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870774" />
-    <state width="1725" height="244" key="GridCell.Tab.0.right" timestamp="1585589732782">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1807" height="273" key="GridCell.Tab.0.right" timestamp="1586206870085">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1725" height="244" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589732782" />
+    <state width="1725" height="253" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724903" />
+    <state width="1807" height="273" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870085" />
     <state width="871" height="273" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870775" />
     <state width="1725" height="244" key="GridCell.Tab.1.bottom" timestamp="1585589732783">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -419,11 +408,11 @@
     </state>
     <state x="2460" y="256" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589651983" />
     <state x="588" y="277" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283071879" />
-    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586117279764">
+    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586200992741">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="2992" y="363" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586016161122" />
-    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1585515294182" />
+    <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586200992741" />
     <state x="1102" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586117279764" />
     <state x="1119" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585167395088">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -454,15 +443,24 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/finfriend$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1583419446789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_in_test_signals_py.coverage" NAME="Unittests in test_signals.py Coverage Results" MODIFIED="1586201168536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585195362077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
-    <SUITE FILE_PATH="coverage/finfriend$graph.coverage" NAME="graph Coverage Results" MODIFIED="1585579139296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
-    <SUITE FILE_PATH="coverage/finfriend$scheduler.coverage" NAME="scheduler Coverage Results" MODIFIED="1584010962493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$graph.coverage" NAME="graph Coverage Results" MODIFIED="1586154005924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_test_signals_TestSignals.coverage" NAME="Unittests for portfolio.test_signals.TestSignals Coverage Results" MODIFIED="1586201492200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals.coverage" NAME="Unittests for portfolio.unit_tests.TestSignals Coverage Results" MODIFIED="1583419266745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals_test_add.coverage" NAME="Unittests for portfolio.unit_tests.TestSignals.test_add Coverage Results" MODIFIED="1583413759277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_test_signal_TestCalc.coverage" NAME="Unittests for test_signal.TestCalc Coverage Results" MODIFIED="1586203927715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$cron.coverage" NAME="cron Coverage Results" MODIFIED="1584006483524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$test_2.coverage" NAME="test_2 Coverage Results" MODIFIED="1585202643783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
-    <SUITE FILE_PATH="coverage/finfriend$Unittests_in_unit_tests_py.coverage" NAME="Unittests in unit_tests.py Coverage Results" MODIFIED="1583413241014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_test_signals_TestSignals_test_add.coverage" NAME="Unittests for portfolio.test_signals.TestSignals.test_add Coverage Results" MODIFIED="1586201556218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$signals.coverage" NAME="signals Coverage Results" MODIFIED="1584011027966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_in_test_calc_py.coverage" NAME="Unittests in test_calc.py Coverage Results" MODIFIED="1586203073236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1583419446789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_test_signals_TestSignals.coverage" NAME="Unittests for test_signals.TestSignals Coverage Results" MODIFIED="1586201139012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$scheduler.coverage" NAME="scheduler Coverage Results" MODIFIED="1584010962493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$test_signal.coverage" NAME="test_signal Coverage Results" MODIFIED="1586206865786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals_test_add.coverage" NAME="Unittests for portfolio.test_signals.TestSignals.test_add Coverage Results" MODIFIED="1586153873417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_test_signal_TestCalc_test_add.coverage" NAME="Unittests for test_signal.TestCalc.test_add Coverage Results" MODIFIED="1586203924439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_in_unit_tests_py.coverage" NAME="Unittests in unit_tests.py Coverage Results" MODIFIED="1583413241014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_tests_unit_test_TestSignals.coverage" NAME="Unittests for portfolio.test_signals.TestSignals Coverage Results" MODIFIED="1586153867276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

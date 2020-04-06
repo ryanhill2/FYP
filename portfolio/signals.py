@@ -1,6 +1,7 @@
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from portfolio.models import Stock, Portfolio
+from .models import *
 import schedule
 import time
 
@@ -10,10 +11,6 @@ from matplotlib import style
 import pandas as pd
 
 import pandas_datareader.data as web
-
-
-def add(x, y):
-    return x + y
 
 
 @receiver(post_save, sender=Stock)
