@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be8e8f2-af46-4fa1-bfca-035bc6262d57" name="Default Changelist" comment="update to models extra fields added">
-      <change afterPath="$PROJECT_DIR$/portfolio/signal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/test_signal.py" afterDir="false" />
+    <list default="true" id="8be8e8f2-af46-4fa1-bfca-035bc6262d57" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/adjClose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/candleStick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/multiChart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/volume.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/calc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/test_calc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/unit_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/test_signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/view_individual_stock_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/view_individual_stock_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,9 +70,6 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/portfolio" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/portfolio/templates" />
@@ -79,8 +77,33 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/finfriend" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.test_signal">
+  <component name="RunManager" selected="Python.graph">
+    <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="finfriend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/portfolio" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/portfolio/graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_signal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="finfriend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,21 +148,6 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for portfolio.test_signals.TestSignals.test_add" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="finfriend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;portfolio.test_signals.TestSignals.test_add&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_signal.TestCalc" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -189,19 +197,19 @@
     </configuration>
     <list>
       <item itemvalue="Django server.finfriend" />
-      <item itemvalue="Python tests.Unittests for portfolio.test_signals.TestSignals.test_add" />
       <item itemvalue="Python tests.Unittests in test_signal.py" />
       <item itemvalue="Python tests.Unittests for test_signal.TestCalc.test_add" />
       <item itemvalue="Python tests.Unittests for test_signal.TestCalc" />
       <item itemvalue="Python.test_signal" />
+      <item itemvalue="Python.graph" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.graph" />
         <item itemvalue="Python.test_signal" />
         <item itemvalue="Python tests.Unittests for test_signal.TestCalc" />
         <item itemvalue="Python tests.Unittests for test_signal.TestCalc.test_add" />
         <item itemvalue="Python tests.Unittests in test_signal.py" />
-        <item itemvalue="Python tests.Unittests for portfolio.test_signals.TestSignals.test_add" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +248,7 @@
       <workItem from="1586117278861" duration="642000" />
       <workItem from="1586151575080" duration="813000" />
       <workItem from="1586152836730" duration="2444000" />
-      <workItem from="1586200984611" duration="6660000" />
+      <workItem from="1586200984611" duration="10601000" />
     </task>
     <task id="LOCAL-00001" summary="update to models extra fields added">
       <created>1585012360538</created>
@@ -298,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586118062310</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tests">
+      <created>1586209658033</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586209658033</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +327,8 @@
     <MESSAGE value="getting started with working with values to create a data frame with the yahoo API" />
     <MESSAGE value="Docker compose file added for deployment" />
     <MESSAGE value="files for deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="files for deployment" />
+    <MESSAGE value="tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582815521439">
@@ -340,10 +356,11 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1214" y="256" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1582816401009" />
-    <state x="230" y="103" width="860" height="807" key="CommitChangelistDialog2" timestamp="1586118061790">
-      <screen x="67" y="27" width="3773" height="1053" />
+    <state x="147" y="103" width="1180" height="807" key="CommitChangelistDialog2" timestamp="1586209657697">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="2084" y="78" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585589668400" />
+    <state x="147" y="103" width="1180" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586209657697" />
     <state x="95" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585283060025" />
     <state x="230" y="103" key="CommitChangelistDialog2/67.27.3773.1053@67.27.3773.1053" timestamp="1586118061790" />
     <state x="1920" y="92" width="1482" height="872" key="DiffContextDialog" timestamp="1585565854068">
@@ -355,29 +372,29 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1239" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583940746540" />
-    <state width="1807" height="273" key="GridCell.Tab.0.bottom" timestamp="1586206870085">
+    <state width="1807" height="273" key="GridCell.Tab.0.bottom" timestamp="1586234498453">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1725" height="253" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724903" />
-    <state width="1807" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870085" />
+    <state width="1807" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586234498453" />
     <state width="871" height="273" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870778" />
-    <state width="1807" height="273" key="GridCell.Tab.0.center" timestamp="1586206870085">
+    <state width="1807" height="273" key="GridCell.Tab.0.center" timestamp="1586234498452">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1725" height="253" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724902" />
-    <state width="1807" height="273" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870085" />
+    <state width="1807" height="273" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586234498452" />
     <state width="871" height="273" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870774" />
-    <state width="1807" height="273" key="GridCell.Tab.0.left" timestamp="1586206870084">
+    <state width="1807" height="273" key="GridCell.Tab.0.left" timestamp="1586234498451">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1725" height="253" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724902" />
-    <state width="1807" height="273" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870084" />
+    <state width="1807" height="273" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586234498451" />
     <state width="871" height="273" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870774" />
-    <state width="1807" height="273" key="GridCell.Tab.0.right" timestamp="1586206870085">
+    <state width="1807" height="273" key="GridCell.Tab.0.right" timestamp="1586234498452">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1725" height="253" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586152724903" />
-    <state width="1807" height="273" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586206870085" />
+    <state width="1807" height="273" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1586234498452" />
     <state width="871" height="273" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585233870775" />
     <state width="1725" height="244" key="GridCell.Tab.1.bottom" timestamp="1585589732783">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -427,11 +444,6 @@
           <line>50</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/portfolio/views.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -445,7 +457,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/finfriend$Unittests_in_test_signals_py.coverage" NAME="Unittests in test_signals.py Coverage Results" MODIFIED="1586201168536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$tests.coverage" NAME="tests Coverage Results" MODIFIED="1585195362077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
-    <SUITE FILE_PATH="coverage/finfriend$graph.coverage" NAME="graph Coverage Results" MODIFIED="1586154005924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
+    <SUITE FILE_PATH="coverage/finfriend$graph.coverage" NAME="graph Coverage Results" MODIFIED="1586234278253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_test_signals_TestSignals.coverage" NAME="Unittests for portfolio.test_signals.TestSignals Coverage Results" MODIFIED="1586201492200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_portfolio_unit_tests_TestSignals.coverage" NAME="Unittests for portfolio.unit_tests.TestSignals Coverage Results" MODIFIED="1583419266745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/finfriend$Unittests_for_test_signal_TestCalc.coverage" NAME="Unittests for test_signal.TestCalc Coverage Results" MODIFIED="1586203927715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/portfolio" />

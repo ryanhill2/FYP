@@ -1,14 +1,23 @@
 {% extends "blog/base.html" %}
+{% load static %}
+
 {% block content %}
-    <h1>{{ portfolio }}</h1>
-    <h1>Total {{ portfolio.total_change }}</h1>
-    <br>
-    <br>
-    <h1>Enter in a stock in your portfolio</h1>
-    <form method="get">
-            {{ form.as_p}}
-            <button class="btn-outline-primary" type="submit">Get Graph</button>
+    <h1>Enter in a stock ticker</h1>
+       <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Search" />
     </form>
+    <br>
+
+    <h4>Adj Close</h4>
+    <img src="{% static 'adjClose.png' %}"></a>
+    <h4>Adj Close, Moving average and Volume</h4>
+    <img src="{% static 'volume.png' %}"></a>
+    <h4></h4>
+    <img src="{% static 'multiChart.png' %}"></a>
+    <h4>Candle stick representation</h4>
+    <img src="{% static 'candleStick.png' %}"></a>
+
 
 
 {% endblock content %}

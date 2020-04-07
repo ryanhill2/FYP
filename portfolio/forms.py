@@ -1,6 +1,9 @@
 from django import forms
 from django.utils.safestring import mark_safe
 from .models import Stock, Portfolio
+# from django import forms
+from django.forms import ModelForm
+
 
 
 class stockForm(forms.ModelForm):

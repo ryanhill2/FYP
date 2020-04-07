@@ -101,17 +101,6 @@ def view_individual_stock_data(request):
 
         return render(request, 'portfolio/view_individual_stock_data.html', args)
 
-def create_stock_graph(stock_ticker, start_date, end_date):
-    style.use('ggplot')
-
-    start = dt.datetime(2000, 1, 1)
-    end = dt.datetime(2019, 11, 7)
-    stock_name = 'ANF'
-
-    df = web.DataReader(stock_name, 'yahoo')
-    print(df.tail(6))
-
-
 
 def create_portfolio(request):
     # stock_list = {

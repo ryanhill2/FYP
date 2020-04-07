@@ -27,18 +27,38 @@ df = web.DataReader('CRM', 'yahoo', start, end)
 # df['Adj Close'].plot()
 # plt.show()
 
-# for 2 graps with three plots
-df['100ma'] = df['Adj Close'].rolling(window=100, min_periods=0).mean()
-df.dropna(inplace=True)
 
-# ax1 = plt.subplot2grid((6,1), (0,0), rowspan=5, colspan=1)
-# ax2 = plt.subplot2grid((6,1), (5,0), rowspan=1, colspan=1, sharex=ax1)
-#
-# ax1.plot(df.index, df['Adj Close'])
-# ax1.plot(df.index, df['100ma'])
-# ax2.bar(df.index, df['Volume'])
-plt.savefig('example3.png', dpi=100)
-plt.show()
+def AdjClose():
+    df['100ma'] = df['Adj Close'].rolling(window=100, min_periods=0).mean()
+    df.dropna(inplace=True)
+
+    ax1 = plt.subplot2grid((6,1), (0,0), rowspan=5, colspan=1)
+
+    ax1.plot(df.index, df['Adj Close'])
+    plt.savefig('adjClose.png', dpi=100)
+    plt.show()
+
+def volume():
+    ax2 = plt.subplot2grid((6,1), (0,0), rowspan=5, colspan=1)
+
+    ax2.bar(df.index, df['Volume'])
+    plt.savefig('volume.png', dpi=100)
+    plt.show()
+
+
+# for 2 graps with three plots
+def threeplots():
+    df['100ma'] = df['Adj Close'].rolling(window=100, min_periods=0).mean()
+    df.dropna(inplace=True)
+
+    ax1 = plt.subplot2grid((6,1), (0,0), rowspan=5, colspan=1)
+    ax2 = plt.subplot2grid((6,1), (5,0), rowspan=1, colspan=1, sharex=ax1)
+
+    ax1.plot(df.index, df['Adj Close'])
+    ax1.plot(df.index, df['100ma'])
+    ax2.bar(df.index, df['Volume'])
+    plt.savefig('multiChart.png', dpi=100)
+    plt.show()
 
 
 def candleStick():
@@ -57,8 +77,11 @@ def candleStick():
     ax2.fill_between(df_volume.index.map(mdates.date2num), df_volume.values, 0)
 
 
-    plt.savefig('example4.png', dpi=100)
+    plt.savefig('candleStick.png', dpi=100)
     plt.show()
 
 
 candleStick()
+threeplots()
+AdjClose()
+volume()
